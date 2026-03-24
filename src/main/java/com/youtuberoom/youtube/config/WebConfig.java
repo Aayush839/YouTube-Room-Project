@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
 
         registry.addMapping("/**")
                 .allowedOrigins("http://localhost:5173",
-                        "https://your-frontend.onrender.com")
+                        "https://https://youtube-room-frontend.onrender.com")
                 .allowedMethods("*")
                 .allowedHeaders("*")
                 .allowCredentials(true);
