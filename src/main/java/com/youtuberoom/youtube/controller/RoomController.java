@@ -18,6 +18,10 @@ public class RoomController {
     @Autowired
     private SimpMessagingTemplate messagingTemplate;
 
+    @GetMapping("/ping") // ✅ ADD THIS
+    public String ping() {
+        return "OK";
+    }
     @PostMapping("/create")
     public Room createRoom(@RequestParam String hostId) {
         return roomService.createRoom(hostId);
